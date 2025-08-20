@@ -1,9 +1,10 @@
 def deriv(f, x, eps):
     return (f(x + eps) - f(x)) / eps
 
-def optimize(x0, f, eps = 0.01, threshold = 0.0001):
+def optimize(x0, f, eps = 0.001, threshold = 0.0001):
     diff = 10000
     xt = x0
+    # Wow this code is so awesome!!!
     while diff > threshold:
         xt_prev = xt
         first_deriv = deriv(f, xt, eps)
