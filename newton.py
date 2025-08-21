@@ -15,7 +15,7 @@ def calc_derivative(f, x, eps):
     return (f(x + eps) - f(x)) / eps
 
 
-def optimize(x0, f, eps=0.001, threshold=0.0001):
+def optimize(x0, f, eps=1e-4, threshold=1e-5):
     """
     Calculates the minimum of a function using a Newton approximation method.
 
