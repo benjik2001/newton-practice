@@ -4,7 +4,7 @@ import numpy as np
 def optimize(x_0, f, eps=1e-4, tol=1e-5):
     x_t = x_0
     dist = tol + 1
-    while diff > tol:
+    while dist > tol:
         x_prev = x_t
         hessian = nd.Hessian(f)(x_t)
         gradient = nd.Gradient(f)(x_t)
