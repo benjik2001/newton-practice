@@ -4,6 +4,7 @@ import numpy as np
 def optimize(x_0, f, eps=1e-4, tol=1e-5):
     """
     add docs string
+    add new docs string
     """
     x_t = x_0
     dist = tol + 1
